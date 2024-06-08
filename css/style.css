@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+.table {
+  display: grid;
+  gap: 1px;
+  background-color: silver;
+  border: solid 1px silver;
+}
+.table.read {
+  grid-template-columns: 20% repeat(3, 1fr);
+}
+.table.update {
+  grid-template-columns: 5% repeat(6, 1fr);
+}
+.table div {
+  padding: 0.5rem;
+  text-align: center;
+}
+.table div:not(.th) {
+  background-color: white;
+}
+.table div.th {
+  background-color: gray;
+  color: white;
+}
+.msg {
+  background-color: pink;
+}
